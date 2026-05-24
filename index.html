@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vacation Vibes – Explore Sikkim & Beyond</title>
+  <link rel="icon" href="logo.webp" type="image/webp"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="logo.webp" alt="Vacation Vibes"/>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Book a Trip</a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <span class="hero-tag">✈ Sikkim's #1 Travel Company</span>
+        <h1>Discover the <em>Magic</em> of the Himalayas</h1>
+        <p>Handcrafted journeys through snow-capped peaks, ancient monasteries, and blooming valleys of Northeast India.</p>
+        <div class="hero-actions">
+          <a href="#packages" class="btn-gold">Explore Packages</a>
+          <a href="#contact" class="btn-ghost">📞 Call Us</a>
+        </div>
+        <div class="hero-numbers">
+          <div class="hero-num"><strong>500+</strong><span>Happy Travelers</span></div>
+          <div class="hero-num"><strong>50+</strong><span>Tour Packages</span></div>
+          <div class="hero-num"><strong>5★</strong><span>Rated Service</span></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-grid">
+          <div class="hcard hcard-tall">
+            <div class="hcard-bg" style="background:linear-gradient(160deg,#0d4a3a,#1a7a5e)">
+              <div class="hcard-emoji">🏔</div>
+              <div class="hcard-info"><strong>Kanchenjunga</strong><span>North Sikkim</span></div>
+            </div>
+          </div>
+          <div class="hcard">
+            <div class="hcard-bg" style="background:linear-gradient(160deg,#c9a84c,#8a6010)">
+              <div class="hcard-emoji">🌸</div>
+              <div class="hcard-info"><strong>Yumthang</strong><span>Valley of Flowers</span></div>
+            </div>
+          </div>
+          <div class="hcard">
+            <div class="hcard-bg" style="background:linear-gradient(160deg,#1a5c4a,#c9a84c)">
+              <div class="hcard-emoji">❄</div>
+              <div class="hcard-info"><strong>Zero Point</strong><span>Snow Desert</span></div>
+            </div>
+          </div>
+          <div class="hcard hcard-wide">
+            <div class="hcard-bg" style="background:linear-gradient(160deg,#0d3d30,#2d8a72)">
+              <div class="hcard-emoji">🕉</div>
+              <div class="hcard-info"><strong>Rumtek</strong><span>Monastery</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- SEARCH BAR -->
+  <section class="search-section">
+    <div class="search-box">
+      <div class="search-field">
+        <label>Destination</label>
+        <select>
+          <option>Gangtok, Sikkim</option>
+          <option>North Sikkim</option>
+          <option>Pelling</option>
+          <option>Darjeeling</option>
+          <option>Namchi</option>
+        </select>
+      </div>
+      <div class="search-divider"></div>
+      <div class="search-field">
+        <label>Travel Date</label>
+        <input type="date"/>
+      </div>
+      <div class="search-divider"></div>
+      <div class="search-field">
+        <label>Travelers</label>
+        <select>
+          <option>1 Person</option>
+          <option>2 People</option>
+          <option>3-5 People</option>
+          <option>6+ People</option>
+        </select>
+      </div>
+      <a href="#packages" class="search-btn">Search Packages</a>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="destinations" id="destinations">
+    <div class="section-head">
+      <span class="section-tag">Where to Go</span>
+      <h2>Popular <em>Destinations</em></h2>
+      <p>From misty mountain towns to serene lakesides — explore the best of Northeast India</p>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card">
+        <div class="dest-img" style="background:linear-gradient(135deg,#0d4a3a 0%,#1a7a5e 100%)">
+          <div class="dest-icon">🏙</div>
+        </div>
+        <div class="dest-info">
+          <h3>Gangtok</h3>
+          <p>Capital city with stunning views, vibrant MG Marg & Nathula Pass</p>
+          <span class="dest-tag">Most Popular</span>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="dest-img" style="background:linear-gradient(135deg,#1a5c4a 0%,#c9a84c 100%)">
+          <div class="dest-icon">❄</div>
+        </div>
+        <div class="dest-info">
+          <h3>North Sikkim</h3>
+          <p>Lachung, Yumthang Valley & Zero Point — the snow paradise</p>
+          <span class="dest-tag">Adventure</span>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="dest-img" style="background:linear-gradient(135deg,#c9a84c 0%,#8a6010 100%)">
+          <div class="dest-icon">🌄</div>
+        </div>
+        <div class="dest-info">
+          <h3>Pelling</h3>
+          <p>Kanchenjunga views, Pemayangtse monastery & Skywalk bridge</p>
+          <span class="dest-tag">Scenic</span>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="dest-img" style="background:linear-gradient(135deg,#0d3d30 0%,#2d8a72 100%)">
+          <div class="dest-icon">🌊</div>
+        </div>
+        <div class="dest-info">
+          <h3>Darjeeling</h3>
+          <p>Toy train, tea gardens & Tiger Hill sunrise — a timeless classic</p>
+          <span class="dest-tag">Heritage</span>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="dest-img" style="background:linear-gradient(135deg,#1a7a5e 0%,#0d3d30 100%)">
+          <div class="dest-icon">🕉</div>
+        </div>
+        <div class="dest-info">
+          <h3>Namchi</h3>
+          <p>Giant Shiva statue, Char Dham replica & beautiful south Sikkim</p>
+          <span class="dest-tag">Spiritual</span>
+        </div>
+      </div>
+      <div class="dest-card">
+        <div class="dest-img" style="background:linear-gradient(135deg,#c9a84c 0%,#1a5c4a 100%)">
+          <div class="dest-icon">🌿</div>
+        </div>
+        <div class="dest-info">
+          <h3>Ravangla</h3>
+          <p>Buddha Park, tea estates and misty hills of south Sikkim</p>
+          <span class="dest-tag">Peaceful</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-visual">
+        <div class="about-cards">
+          <div class="acard acard1">
+            <div class="acard-icon">🧭</div>
+            <strong>Local Experts</strong>
+            <p>Born & raised in Sikkim</p>
+          </div>
+          <div class="acard acard2">
+            <div class="acard-icon">🛡</div>
+            <strong>Safe Travel</strong>
+            <p>Verified stays & transport</p>
+          </div>
+          <div class="acard acard3">
+            <div class="acard-icon">💎</div>
+            <strong>Best Value</strong>
+            <p>No hidden charges ever</p>
+          </div>
+          <div class="acard acard4">
+            <div class="acard-icon">📞</div>
+            <strong>24/7 Support</strong>
+            <p>Always here for you</p>
+          </div>
+        </div>
+        <div class="about-badge">Since 2020 · 500+ Trips</div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">Who We Are</span>
+        <h2>Travel is Our <em>Passion</em></h2>
+        <p>Vacation Vibes was born from a deep love for the Himalayas. We are a team of passionate local travel experts based in Sikkim, dedicated to crafting authentic and unforgettable journeys for every traveler.</p>
+        <p>Whether you're chasing snow, seeking spiritual peace, or simply wanting to disconnect from city life — we design every trip with heart, honesty, and deep local knowledge.</p>
+        <div class="about-list">
+          <div class="alist-item">✅ Customized itineraries for every budget</div>
+          <div class="alist-item">✅ Experienced local guides</div>
+          <div class="alist-item">✅ Transparent pricing — no surprises</div>
+          <div class="alist-item">✅ End-to-end trip management</div>
+        </div>
+        <a href="#contact" class="btn-gold">Plan My Trip</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="packages" id="packages">
+    <div class="section-head">
+      <span class="section-tag">Tour Packages</span>
+      <h2>Choose Your <em>Adventure</em></h2>
+      <p>Carefully crafted packages for every type of traveler</p>
+    </div>
+    <div class="pkg-grid">
+
+      <div class="pkg">
+        <div class="pkg-top" style="background:linear-gradient(135deg,#0d4a3a,#1a7a5e)">
+          <span class="pkg-label">Most Popular</span>
+          <div class="pkg-icon-big">🏙</div>
+          <h3>Gangtok Delight</h3>
+          <div class="pkg-meta"><span>4 Days / 3 Nights</span><span>Gangtok</span></div>
+        </div>
+        <div class="pkg-body">
+          <ul>
+            <li>🏨 3-Star Hotel Stay</li>
+            <li>🍽 Breakfast Included</li>
+            <li>🚗 All Transfers</li>
+            <li>🗺 MG Marg, Nathula, Rumtek</li>
+          </ul>
+          <div class="pkg-price-row">
+            <div><span class="pkg-price">₹7,999</span><span class="pkg-per">/person</span></div>
+            <a href="#contact" class="btn-gold-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg pkg-featured">
+        <div class="pkg-top" style="background:linear-gradient(135deg,#c9a84c,#8a6010)">
+          <span class="pkg-label gold">Best Value</span>
+          <div class="pkg-icon-big">🌟</div>
+          <h3>Sikkim Splendor</h3>
+          <div class="pkg-meta"><span>6 Days / 5 Nights</span><span>Full Sikkim</span></div>
+        </div>
+        <div class="pkg-body">
+          <ul>
+            <li>🏨 3-Star Hotels</li>
+            <li>🍽 Breakfast & Dinner</li>
+            <li>🚗 AC Vehicle</li>
+            <li>🗺 Gangtok + Pelling + Namchi</li>
+          </ul>
+          <div class="pkg-price-row">
+            <div><span class="pkg-price">₹13,499</span><span class="pkg-per">/person</span></div>
+            <a href="#contact" class="btn-gold-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg">
+        <div class="pkg-top" style="background:linear-gradient(135deg,#1a5c4a,#0d3d30)">
+          <span class="pkg-label blue">Adventure</span>
+          <div class="pkg-icon-big">❄</div>
+          <h3>Lachung Snow Trip</h3>
+          <div class="pkg-meta"><span>5 Days / 4 Nights</span><span>North Sikkim</span></div>
+        </div>
+        <div class="pkg-body">
+          <ul>
+            <li>🏨 Deluxe Mountain Stay</li>
+            <li>🍽 All Meals</li>
+            <li>🚗 SUV Transfers</li>
+            <li>🗺 Yumthang, Zero Point</li>
+          </ul>
+          <div class="pkg-price-row">
+            <div><span class="pkg-price">₹11,999</span><span class="pkg-per">/person</span></div>
+            <a href="#contact" class="btn-gold-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg">
+        <div class="pkg-top" style="background:linear-gradient(135deg,#2d6e5e,#c9a84c)">
+          <span class="pkg-label">Heritage</span>
+          <div class="pkg-icon-big">🌊</div>
+          <h3>Darjeeling Tour</h3>
+          <div class="pkg-meta"><span>3 Days / 2 Nights</span><span>Darjeeling</span></div>
+        </div>
+        <div class="pkg-body">
+          <ul>
+            <li>🏨 Heritage Hotel</li>
+            <li>🍽 Breakfast</li>
+            <li>🚂 Toy Train Ride</li>
+            <li>🗺 Tiger Hill, Tea Gardens</li>
+          </ul>
+          <div class="pkg-price-row">
+            <div><span class="pkg-price">₹5,499</span><span class="pkg-per">/person</span></div>
+            <a href="#contact" class="btn-gold-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg">
+        <div class="pkg-top" style="background:linear-gradient(135deg,#0d3d30,#1a5c4a)">
+          <span class="pkg-label">Spiritual</span>
+          <div class="pkg-icon-big">🕉</div>
+          <h3>Soul of Sikkim</h3>
+          <div class="pkg-meta"><span>5 Days / 4 Nights</span><span>All Sikkim</span></div>
+        </div>
+        <div class="pkg-body">
+          <ul>
+            <li>🏨 Boutique Stays</li>
+            <li>🍽 Vegetarian Meals</li>
+            <li>🚗 Private Vehicle</li>
+            <li>🗺 Monasteries & Temples</li>
+          </ul>
+          <div class="pkg-price-row">
+            <div><span class="pkg-price">₹9,999</span><span class="pkg-per">/person</span></div>
+            <a href="#contact" class="btn-gold-sm">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg pkg-custom">
+        <div class="pkg-custom-inner">
+          <div style="font-size:3rem">✨</div>
+          <h3>Custom Package</h3>
+          <p>Tell us your dream destination, budget and dates — we'll craft a perfect itinerary just for you!</p>
+          <a href="#contact" class="btn-ghost-dark">Get Custom Quote</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <span class="section-tag">Visual Journey</span>
+      <h2>Glimpses of <em>Sikkim</em></h2>
+      <p>Let these views inspire your next adventure</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gitem g-tall" style="background:linear-gradient(160deg,#0d4a3a,#1a7a5e)">
+        <div class="gitem-content"><div class="gitem-icon">🏔</div><span>Kanchenjunga Peak</span></div>
+      </div>
+      <div class="gitem" style="background:linear-gradient(160deg,#1a5c4a,#2d8a72)">
+        <div class="gitem-content"><div class="gitem-icon">🌸</div><span>Yumthang Valley</span></div>
+      </div>
+      <div class="gitem" style="background:linear-gradient(160deg,#c9a84c,#8a6010)">
+        <div class="gitem-content"><div class="gitem-icon">🕉</div><span>Rumtek Monastery</span></div>
+      </div>
+      <div class="gitem g-wide" style="background:linear-gradient(160deg,#0d3d30,#1a7a5e)">
+        <div class="gitem-content"><div class="gitem-icon">❄</div><span>Zero Point — North Sikkim</span></div>
+      </div>
+      <div class="gitem" style="background:linear-gradient(160deg,#2d6e5e,#c9a84c)">
+        <div class="gitem-content"><div class="gitem-icon">🌊</div><span>Tsomgo Lake</span></div>
+      </div>
+      <div class="gitem" style="background:linear-gradient(160deg,#1a5c4a,#0d3d30)">
+        <div class="gitem-content"><div class="gitem-icon">🌿</div><span>Darjeeling Tea Gardens</span></div>
+      </div>
+    </div>
+    <p class="gallery-note">📸 Replace these with real Sikkim photos for best results!</p>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-head">
+      <span class="section-tag">Reviews</span>
+      <h2>What Travelers <em>Say</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Vacation Vibes made our Sikkim trip absolutely magical! The planning was seamless and our guide was incredible. Will definitely book again!"</p>
+        <div class="testi-author"><div class="testi-av">P</div><div><strong>Priya Sharma</strong><span>Delhi</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Best travel experience of my life! The North Sikkim snow trip was beyond words. Professional, caring and absolutely amazing!"</p>
+        <div class="testi-author"><div class="testi-av">R</div><div><strong>Rahul Mehta</strong><span>Mumbai</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Highly recommended! The Darjeeling package was perfectly planned. Great hotels, great food and unforgettable sunrise at Tiger Hill!"</p>
+        <div class="testi-author"><div class="testi-av">A</div><div><strong>Ananya Roy</strong><span>Kolkata</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p>"We traveled as a family of 6 and Vacation Vibes took care of everything. The kids absolutely loved the snow! Thank you so much!"</p>
+        <div class="testi-author"><div class="testi-av">S</div><div><strong>Suresh Nair</strong><span>Bangalore</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-head">
+      <span class="section-tag">Get In Touch</span>
+      <h2>Book Your <em>Dream Trip</em></h2>
+      <p>Fill the form or call us directly — we respond within 24 hours!</p>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-left">
+        <div class="cinfo-card">
+          <h3>Contact Details</h3>
+          <div class="cinfo-item">
+            <span>📞</span>
+            <div>
+              <strong>Phone / WhatsApp</strong>
+              <a href="tel:+918509279176">+91 85092 79176</a>
+              <a href="tel:+918167543886">+91 81675 43886</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <span>📧</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:hello@vacationvibess.in">hello@vacationvibess.in</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <span>📍</span>
+            <div>
+              <strong>Office</strong>
+              <p>Gangtok, Sikkim – 737101</p>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <span>🕐</span>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon–Sat: 9AM – 7PM</p>
+            </div>
+          </div>
+          <div class="cinfo-btns">
+            <a href="https://wa.me/918509279176" target="_blank" class="whatsapp-btn">💬 WhatsApp Us</a>
+            <a href="tel:+918509279176" class="call-btn">📞 Call Now</a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="fg">
+            <label>Your Name *</label>
+            <input type="text" placeholder="e.g. Rahul Sharma" required/>
+          </div>
+          <div class="fg">
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" required/>
+          </div>
+        </div>
+        <div class="fg">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com"/>
+        </div>
+        <div class="form-row">
+          <div class="fg">
+            <label>Select Package</label>
+            <select>
+              <option value="">Choose a Package</option>
+              <option>Gangtok Delight – ₹7,999</option>
+              <option>Sikkim Splendor – ₹13,499</option>
+              <option>Lachung Snow Trip – ₹11,999</option>
+              <option>Darjeeling Tour – ₹5,499</option>
+              <option>Soul of Sikkim – ₹9,999</option>
+              <option>Custom Package</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>Travel Date</label>
+            <input type="date"/>
+          </div>
+        </div>
+        <div class="fg">
+          <label>Number of Travelers</label>
+          <input type="number" placeholder="e.g. 2" min="1"/>
+        </div>
+        <div class="fg">
+          <label>Message</label>
+          <textarea placeholder="Tell us about your dream trip..."></textarea>
+        </div>
+        <button type="submit" class="btn-gold submit-btn">🚀 Send Inquiry</button>
+        <p class="form-note">We respond within 24 hours. Your details are safe with us.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo.webp" alt="Vacation Vibes" class="footer-logo"/>
+        <p>Crafting unforgettable Himalayan journeys since 2020. Travel more, worry less — with Vacation Vibes.</p>
+        <div class="social-row">
+          <a href="#" title="Instagram">📷</a>
+          <a href="#" title="Facebook">📘</a>
+          <a href="#" title="YouTube">▶</a>
+          <a href="https://wa.me/918509279176" title="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#">Gangtok</a></li>
+          <li><a href="#">North Sikkim</a></li>
+          <li><a href="#">Pelling</a></li>
+          <li><a href="#">Darjeeling</a></li>
+          <li><a href="#">Namchi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>📞 +91 85092 79176</li>
+          <li>📞 +91 81675 43886</li>
+          <li>📧 hello@vacationvibess.in</li>
+          <li>📍 Gangtok, Sikkim</li>
+          <li>🌐 vacationvibess.in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vacation Vibes. All rights reserved. Made with ❤ for Sikkim</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

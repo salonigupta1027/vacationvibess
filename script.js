@@ -45,16 +45,38 @@ document.querySelectorAll('.package-card, .feature-card, .testimonial-card, .gal
 });
 
 // ===== FORM SUBMISSION =====
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = this.querySelector('.btn-submit');
-    btn.innerHTML = '✓ Enquiry Sent! We\'ll contact you soon.';
-    btn.style.background = '#25a244';
+    btn.innerHTML = 'Sending...';
+    btn.style.opacity = '0.8';
+    const formData = new FormData(this);
+    try {
+        const response = await fetch('https://formspree.io/f/xgogbzav', {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+            btn.innerHTML = '✓ Enquiry Sent! We\'ll contact you soon.';
+            btn.style.background = '#25a244';
+            btn.style.opacity = '1';
+            this.reset();
+        } else {
+            btn.innerHTML = 'Error! Please WhatsApp us directly.';
+            btn.style.background = '#e24b4a';
+            btn.style.opacity = '1';
+        }
+    } catch {
+        btn.innerHTML = 'Error! Please WhatsApp us directly.';
+        btn.style.background = '#e24b4a';
+        btn.style.opacity = '1';
+    }
     setTimeout(() => {
         btn.innerHTML = 'Send Enquiry <i class="fas fa-paper-plane"></i>';
         btn.style.background = '';
-        this.reset();
-    }, 4000);
+        btn.style.opacity = '1';
+    }, 5000);
 });
 
 // ===== SMOOTH SCROLL =====

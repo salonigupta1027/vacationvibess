@@ -522,27 +522,27 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vacation_vibes_tours?igsh=MW1udWJxaHM3bzRhMQ==" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1DFAoDFrrs/" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xgogbzav" method="POST">
                         <h3>Book Your Trip</h3>
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Your Name</label>
-                                <input type="text" placeholder="Enter your name" required>
+                                <input type="text" name="name" placeholder="Enter your name" required>
                             </div>
                             <div class="form-group">
                                 <label>Phone Number</label>
-                                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                                <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Select Package</label>
-                            <select required>
+                            <select name="package" required>
                                 <option value="">Choose a tour package</option>
                                 <option>North Sikkim Explorer (5D/4N) - ₹8,500/person</option>
                                 <option>East Sikkim & Gangtok (4D/3N) - ₹6,500/person</option>
@@ -556,17 +556,19 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Travel Date</label>
-                                <input type="date" required>
+                                <input type="date" name="travel_date" required>
                             </div>
                             <div class="form-group">
                                 <label>Number of Travelers</label>
-                                <input type="number" placeholder="e.g. 4" min="1" required>
+                                <input type="number" name="travelers" placeholder="e.g. 4" min="1" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Message (Optional)</label>
-                            <textarea rows="3" placeholder="Any special requirements or questions?"></textarea>
+                            <textarea rows="3" name="message" placeholder="Any special requirements or questions?"></textarea>
                         </div>
+                        <input type="hidden" name="_subject" value="New Booking Enquiry - Vacation Vibes">
+                        <input type="hidden" name="_next" value="https://vacationvibess.in">
                         <button type="submit" class="btn-submit">Send Enquiry <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
@@ -608,10 +610,10 @@
                     <p><i class="fab fa-whatsapp"></i> +91 81675 43886</p>
                     <p><i class="fas fa-map-marker-alt"></i> Siliguri, West Bengal</p>
                     <div class="footer-social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vacation_vibes_tours?igsh=MW1udWJxaHM3bzRhMQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1DFAoDFrrs/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="https://wa.me/918167543886"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/918167543886" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>

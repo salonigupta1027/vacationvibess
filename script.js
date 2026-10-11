@@ -1,10 +1,3 @@
-// LOADER
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        document.getElementById('loader').classList.add('hidden');
-    }, 2200);
-});
-
 // CUSTOM CURSOR
 const cursor = document.getElementById('cursor');
 const follower = document.getElementById('cursorFollower');
